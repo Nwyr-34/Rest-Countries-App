@@ -1,0 +1,36 @@
+<div *ngIf="country" [routerLink]="'/info/' + country.name.common" class="country-card">
+    <mat-card >
+        <mat-card-header style="margin: 0 0 16px;">
+            <mat-card-title>
+                {{country.name.common}}
+            </mat-card-title>
+            <mat-card-subtitle>
+                {{country.name.official}}
+            </mat-card-subtitle>
+          </mat-card-header>
+        <img [ngSrc]="country.flags.png" [alt]="country.flags.alt" width="320" height="160"> 
+    
+        <mat-card-content class="content-card">
+            <p>
+                <strong>Capital: </strong>
+                {{country.capital}}
+            </p>
+            <p>
+                <strong>Continent: </strong>
+                {{country.region}}
+            </p>
+            <p>
+                <strong>Languages: </strong>
+                {{ getLanguageNames().join(' - ') }}
+            </p>
+              
+            <p>
+                <strong>Population: </strong>
+                {{country.population | number:'1.0'}}
+            </p>    
+        </mat-card-content>
+    </mat-card>
+    
+</div>
+
+  

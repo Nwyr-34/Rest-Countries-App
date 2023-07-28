@@ -1,0 +1,41 @@
+.title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 8vw;
+  }
+h1 {
+    font-size: 80px;
+    font-weight: bold;
+    display: flex;
+ }
+
+h2{
+    text-align: center;
+}
+
+.form-card {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-form{
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 3px;
+}
+table{
+  width: 100%;
+  margin-top: 3em;
+  margin-bottom: 5px;
+}
+
+  
+
+
+ /**/

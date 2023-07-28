@@ -1,0 +1,14 @@
+.country-card {
+    max-width: 360px;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin: 2em;
+  }
+
+.content-card{
+    padding: 16px;
+}
+.country-flag{
+  object-fit: cover;
+}

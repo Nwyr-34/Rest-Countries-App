@@ -1,0 +1,49 @@
+<div class="title">
+    <h1>Countries Around the World</h1> 
+</div>
+
+<div class="search-form">
+<mat-card class="form-card">
+    <mat-card-title>Search For</mat-card-title>
+    <form>
+        <mat-grid-list cols="4" rowHeight="70px">
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field>
+                    <mat-label>Name</mat-label>
+                    <input matInput>
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field>
+                    <mat-label>Capital</mat-label>
+                    <mat-select>
+                      <mat-option value="one">First option</mat-option>
+                      <mat-option value="two">Second option</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <mat-form-field>
+                    <mat-label>Continent</mat-label>
+                    <mat-select>
+                      <mat-option value="one">First option</mat-option>
+                      <mat-option value="two">Second option</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="1" [rowspan]="1">
+                <button mat-raised-button color="primary">Primary</button>
+            </mat-grid-tile>
+            
+            
+        </mat-grid-list>
+    </form>
+</mat-card>
+
+</div>
+
+<div>
+    <app-country-card *ngFor="let country of countries$ | async"
+         [country]="country">
+    </app-country-card>
+</div>
